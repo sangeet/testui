@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfyui test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/testui/css/style.css">
+</head>
+<body class="bg-gray-800 text-gray-200">
+<div class="container mx-auto flex flex-col p-5 gap-2">
+    <div id="history-queue" class="flex gap-2 overflow-x-scroll"></div>
+    <textarea id="positive" class="px-3 py-2 border rounded bg-gray-600" rows="3"></textarea>
+    <div class="flex gap-3">
+        <button
+                class="border px-2 py-1 rounded bg-gray-500"
+                onclick="fetchHistory()"
+                id="fetch-history"
+        >Fetch History
+        </button>
+        <button
+                id="prompt-button"
+                class="border px-2 py-1 rounded bg-gray-500"
+                onclick="triggerPrompt()"
+        >Queue
+        </button>
+    </div>
+    <div id="progress-bar" class="w-full h-2 border border-gray-700">
+        <div id="progress-bar-inner" class="h-full bg-red-500" style="width: 0%"></div>
+    </div>
+    <a id="output-link" target="_blank" class="w-auto border border-2 border-gray-700 p-px max-h-[512px] mx-auto">
+        <img
+                id="output-image"
+                src="" alt="output-image"
+                class=""
+        ></img>
+    </a>
+</div>
+</body>
+<script src="/testui/js/app.js"></script>
+</html>
