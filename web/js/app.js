@@ -179,7 +179,7 @@ function fetchHistory() {
 }
 
 function prompt(promptString) {
-    const previousSeed = workflow["3"].input.seed
+    const previousSeed = workflow["3"].inputs.seed
     workflow["3"].inputs.seed = previousSeed + 1
 
     workflow["6"].inputs.text = promptString
@@ -220,15 +220,15 @@ function setProgress(currentStep, totalSteps) {
 function setOutputObject(historyObj) {
     const outputImage = document.getElementById("output-image");
     const imageName = historyObj.outputs["11"].images[0].filename
-    outputImage.src = parseUrl(`view?filename=${imageName}&subfolder=&type=output`)
+    const fileUrl = parseUrl(`view?filename=${imageName}&subfolder=&type=output`)
+    outputImage.src = fileUrl
 
     const outputLink = document.getElementById("output-link");
-    outputLink.href = parseUrl(`view?filename=${imageName}&subfolder=&type=output`)
+    outputLink.href = fileUrl
 
     const positivePrompt = document.getElementById("positive");
     const objPrompt = historyObj.prompt[2][6].inputs.text;
     positivePrompt.value = objPrompt
-
 }
 
 fetchHistory()
