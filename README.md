@@ -1,8 +1,8 @@
 # Simple Frontend For ComfyUI workflow
 
-A simple base front-end for text-to-image workflow in ComfyUI. Meant to server as a base to be modified for future complex workflows
+A simple base front-end for text-to-image workflow in ComfyUI. Meant to serve as a base to be modified for future complex workflows
 
-Inspired by https://www.youtube.com/watch?v=anYHG37fUg4 , but some of his endpoints didn't quite work the same for me, so I modified them by following some example usage from ComfyUI Github documentation
+Inspired by https://www.youtube.com/watch?v=anYHG37fUg4 , but some of his endpoints didn't quite work the same for me, so I modified them by following some example usage from ComfyUI Github discussions: https://github.com/comfyanonymous/ComfyUI/issues/1037
 
 Workflow:
 <img src="workflow.png">
