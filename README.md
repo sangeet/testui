@@ -19,7 +19,7 @@ This is a simple UI meant to be a base for future more complex workflows.
 
 ## Installation
 
-Simply git clone this repository in your `comfyui/custom_nodes` directory.
+Simply git clone this repository in your `ComfyUI/custom_nodes` directory.
 This does not require any external python packages
 
 ## Modifications
@@ -38,7 +38,7 @@ Some notable settings:
 
 ## Usage
 1. Start the ComfyUI server with `python main.py --listen 0.0.0.0 --enable-cors-header '*'`
-2. Find your computer's IP address and navigate to `http://<your-ip>:8188/comfyui-testui` to start using it
+2. Find your computer's IP address and navigate to `http://<your-ip>:8188/testui` to start using it
 
 ## Code Smells:
 
